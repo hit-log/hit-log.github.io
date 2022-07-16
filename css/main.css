@@ -226,19 +226,27 @@ table.student{
   width: 100%;
 }
 table.student tr{
-  height: 100px; 
+  height: auto; 
 }
 table.student tr td{
   position: relative;
-  margin-left: 10px;
+  margin-left: 0px;
   width: 20%;
   background-color: rgb(255, 255, 255);
   vertical-align: center;
 }
 table.student tr td.describle{
-  position: relative;
-  margin-left: 10px;
+  position: static;
+  margin-left: 0px;
   width: 25%;
   background-color: rgb(255, 255, 255);
   vertical-align: center;
 }
+  @media screen and (max-width: 800px) {
+    table.student tr td.describle p {
+      /* display: none; */
+      font-size: 0.1em;
+    }
+  }
+
+  
